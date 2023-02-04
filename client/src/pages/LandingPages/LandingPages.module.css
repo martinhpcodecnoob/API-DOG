@@ -1,0 +1,259 @@
+.background{
+    background-image: url('https://img.freepik.com/fotos-premium/textura-piel-perro_62544-40.jpg?w=2000');
+    height: 937px;
+}
+.grid {
+    width: 100vw;
+    max-width: 1280px;
+    position: relative;
+    top: 200px;
+    left: 210px;
+    /* margin: 20dvh auto; */
+    height: 70dvh;
+    display: grid;
+    gap: 42px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 3fr 1fr;
+    padding: 0 42px;
+}
+
+.grid > div {
+    border-radius: 16px;
+}
+
+.cardWelcome {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    background-color: rgb(27, 26, 26);
+    padding: 5% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    color: beige;
+}
+
+.cardWelcome h4 {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 800;
+}
+
+.cardWelcome p {
+    font-size: 1.05rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.cardLink {
+    grid-row: 1;
+    grid-column: 3 / 7;
+    background-color: rgb(27, 26, 26);
+    opacity: .8;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    color: #8d8d36
+}
+
+.footprint {
+    position: absolute;
+    left: 0%;
+    bottom: 2%;
+}
+
+.cardLink h1 {
+    font-family: 'Nunito';
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+    margin: 0;
+    margin-bottom: 16px;
+    z-index: 2;
+}
+
+
+.linkBtn {
+    position: relative;
+    font-size: 1.25rem;
+    font-weight: 700;
+    z-index: 40;
+    padding: 24px 28px;
+    text-decoration: none;
+}
+
+.innerBtn {
+    font-size: 1.25rem;
+    font-weight: 700;
+    z-index: 30;
+    position: relative;
+}
+
+.linkBtn::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: transform .3s ease-in-out;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px 0px #00000025;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.linkBtn::after {
+    background: url(https://www.pngall.com/wp-content/uploads/7/Doge-PNG-Clipart.png) 50% no-repeat;
+    content: '';
+    background-size: contain;
+    height: 123px;
+    left: 42px;
+    position: absolute;
+    top: -75px;
+    transform: translateY(30%) scale(.4) rotate(-30deg);
+    transform-origin: bottom left;
+    transition: all .3s ease-in-out;
+    width: 108px;
+    z-index: 0;
+    opacity: 0;
+}
+
+.linkBtn:hover::after {
+    transform: translateY(0) scale(1) rotate(-4deg);
+    transform-origin: bottom left;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+}
+
+.linkBtn:hover::before {
+    opacity: 1;
+    transform: scale(108%);
+    transition: transform .3s ease-in-out;
+}
+
+.leftLink, .rightLink {
+    width: 50%;
+}
+
+.leftLink {
+    padding-left: 12%;
+    font-family: 'Nunito';
+}
+
+.rightLink {
+    display: flex;
+    justify-content: center;
+}
+
+/* @media screen and (max-width: 1024px) {
+    .grid {
+        gap: 24px;
+        padding: 0 24px;
+        height: 50dvh;
+        margin: 25dvh auto;
+    }
+
+    .footprint {
+        left: 5%;
+        transform: scale(80%);
+    }
+
+    .cardWelcome h4 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+    .cardWelcome p {
+        font-size: .85rem;
+        line-height: 1.4rem;
+    }
+
+    .cardLink h1 {
+        font-size: 3.25rem;
+    }
+
+    .cardLink p {
+        font-size: 1rem;
+    }
+
+    .linkBtn {
+        padding: 16px 24px;
+    }
+
+    .linkBtn::after {
+        transform: translateY(30%) scale(.2) rotate(-30deg);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: 80dvh;
+        margin: 10dvh auto;
+    }
+
+    .cardWelcome {
+        grid-row: 1;
+        grid-column: 1;
+        padding: 0 8%;
+    }
+
+    .leftLink {
+        padding: 0;
+    }
+
+    .rightLink {
+        justify-content: flex-end;
+    }
+
+
+    .cardLink {
+        grid-row: 2 / 4;
+        grid-column: 1;
+        padding: 0 8%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: 90dvh;
+        margin: 5dvh auto;
+        gap: 16px;
+        padding: 0 16px;
+    }
+
+    .leftLink {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .rightLink {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cardLink {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footprint {
+        left: -40%;
+        transform: translateY(10%) scale(50%);
+    }
+
+    .linkBtn::after {
+        background:none;
+    }       
+} */

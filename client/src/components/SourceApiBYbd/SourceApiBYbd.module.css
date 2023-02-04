@@ -1,0 +1,55 @@
+.filterByOriginBody {
+    padding: 12px 16px 0 0;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.originToggle {
+    padding-right: 6px;
+    background: none;
+    outline: none;
+    border: none;
+    text-align: left;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.originToggle:hover {
+    background-color: var(--color-grey3);
+}
+
+.originToggle:active {
+    transform: scale(97%);
+}
+
+.originToggle svg {
+    font-size: 16px;
+    color: var(--color-secondary-text);
+    margin-right: 4px;
+
+}
+
+.checkbox {
+    pointer-events: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+    justify-self: flex-end;
+}
+
+.checkbox svg {
+    pointer-events: none;
+}
+
+.toggleName {
+    margin-left: 4px;
+    font-size: 0.96rem;
+}

@@ -1,0 +1,62 @@
+.containerBuscar{
+    margin-top: 7px;
+    /* width: auto; */
+}
+
+.Buscar{
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.inputBuscar{
+    font-family: inherit;
+    font-size: 22px;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 20em;
+    transition: all ease-in-out .5s;
+    margin-right: -3rem;
+}
+
+.inputBuscar:hover,
+.inputBuscar:focus{
+    box-shadow: 0 0 1em #1f1f1fa9;
+}
+
+.inputBuscar:focus{
+    outline: none;
+    background-color: #535353;
+    color: antiquewhite;
+}
+
+/* este va a cambiar el aspecto de la letra del placeholder */
+.inputBuscar::-webkit-input-placeholder{
+    font-weight: 100;
+    color: black;
+}
+
+.inputBuscar:focus::-webkit-input-placeholder{
+    font-weight: 100;
+    color: antiquewhite;
+}
+
+.btnBuscar{
+    border: none;
+    background-color:  #ffffff00;
+    margin-top: .1em;
+}
+
+.btnBuscar:hover{
+    cursor: pointer;
+}
+
+.search__icon{
+    height: 1.3em;
+    width: 1.3em;
+    fill: #646464;
+    font-size: 18px;
+}

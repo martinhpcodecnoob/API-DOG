@@ -1,0 +1,128 @@
+.filterHeader {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 16px;
+
+}
+
+.filterTitle {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filterTitle div {
+    display: inline;
+    font-family: sans-serif;
+    background-color: var(--color-secondary-text);
+    width: 16px;
+    height: 16px;
+    font-size: 0.7rem;
+    line-height: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-grey1);
+    border-radius: 50%;
+    margin: 0 2px 0 2px;
+}
+
+.searchFilter {
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 28px;
+    border-radius: 16px;
+    padding-left: 12px;
+    background-color: var(--color-grey2);
+}
+
+.searchFilterInput {
+    width: 100%;
+    text-decoration: none;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.tempCont {
+    display: grid;
+    grid-gap: 0.15rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fill, 26px);
+    height: calc(100% - 58px);
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 4px;
+}
+
+.nothing {
+    font-size: 0.9rem !important;
+    grid-column: 1 / 5;
+    grid-row: 1/8;
+    align-self: center;
+    text-align: center;
+    padding-right: 12px;
+    letter-spacing: normal !important;
+}
+
+.tempToggle {
+    background: none;
+    outline: none;
+    border: none;
+    text-align: left;
+    height: auto;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border-radius: 4px;
+    width: auto;
+    max-width: 120px;
+}
+
+.tempToggle:hover {
+    background-color: var(--color-grey3);
+}
+
+.tempToggle:active {
+    transform: scale(97%);
+}
+
+.toggleName {
+    margin-left: 2px;
+    /* el pointer eventos nos permite eliminar eventos click del elemento en este caso nombre del checkbox */
+    pointer-events: none;
+    height: 100%;
+    line-height: 26px;
+    width: auto;
+    max-width: 80px;
+    padding-right: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+    flex-grow: 2;
+    color: var(--color-secondary-text) !important;
+}
+
+.checkbox {
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    flex-grow: 0;
+    justify-self: flex-end;
+}
+
+.checkbox svg {
+    color: var(--color-secondary-text);
+    pointer-events: none;
+}

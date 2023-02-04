@@ -1,0 +1,147 @@
+:root {
+  --color-black: #231f20;
+  --color-primary-text: #483531;
+  --color-secondary-text: #483531DD;
+  --color-clay: #e05f5fea;
+  --color-blue: #3d405b;
+  --color-yellow: #f3d3a0;
+  --color-yellow-hover: #f3d3a077;
+  --color-green: #81b29a;
+  --color-rose: #e3d4d0;
+  --color-grey1: #fef9f1;
+  --color-grey2: #f7f1e7;
+  --color-grey3: #f3ece6;
+  --color-grey4: #e6ddcf; 
+  --color-background: #b3f6ff;
+  --navbarHeight: 64px;
+  --shadow: rgba(35, 31, 32, .02);
+  --shadow-hover: rgba(35, 31, 32, .1);
+  --X-details: 50vw;
+  --Y-details: 50vh;
+  --width-details: 90%;
+  --height-details: 75%;
+}
+
+@media screen and (max-width: 600px) {
+
+  :root {
+    --navbarHeight: 56px;
+  }
+}
+
+li {
+list-style: none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #01579b #f5f5f5;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/* body::after {
+  background: url('https://uiball.com/static/static-6e6a7f8d3d4c585bd591a596466c7693.png');
+  background-size: 350px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  content: "";
+  z-index: 100;
+  width: 100%;
+  pointer-events: none;
+} */
+
+/* Works on Chrome, Edge, and Safari */
+/* *::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-grey2);;
+}
+
+*::-webkit-scrollbar-thumb {
+  opacity: 0;
+  background-color: var(--color-rose);
+  border-radius: 20px;
+  border: 3px solid var(--color-grey2);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  opacity: 0;
+  background-color: var(--color-yellow);
+  border-radius: 20px;
+  border: 3px solid var(--color-grey2);;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  opacity: 0;
+  background-color: var(--color-yellow);
+  border-radius: 20px;
+  border: 2px solid var(--color-grey2);
+}
+
+@media screen and (max-width: 605px) {
+
+  *::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+
+    border: 3px solid var(--color-background);
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    border: 3px solid var(--color-background);
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    border: 2px solid var(--color-background);
+  }
+  
+
+} */
+
+/* @keyframes nextPage {
+  0% {
+    opacity: 0;
+    transform: translate(5em, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes prevPage {
+  0% {
+    opacity: 0;
+    transform: translateX(-5em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+} */
