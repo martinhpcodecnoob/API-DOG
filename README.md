@@ -1,8 +1,8 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
+![HenryLogo](BannerProfile.gif)
 
 # Individual Project - Henry Dogs
 
-<img height="200" src="./dog.png" />
+<img src="./doge-page.gif" />
 
 ## Objetivos del Proyecto
 
@@ -86,11 +86,6 @@ __IMPORTANTE__: Para las funcionalidades de filtrado y ordenamiento NO pueden ut
 - GET <https://api.thedogapi.com/v1/breeds>
 - GET <https://api.thedogapi.com/v1/breeds/search?q={raza_perro}>
 
-### Requerimientos mínimos
-
-A continuación se detallaran los requerimientos mínimos para la aprobación del proyecto individial. Aquellos que deseen agregar más funcionalidades podrán hacerlo. En cuanto al diseño visual no va a haber wireframes ni prototipos prefijados sino que tendrán libertad de hacerlo a su gusto pero tienen que aplicar los conocimientos de estilos vistos en el curso para que quede agradable a la vista.
-
-__IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estilos a la aplicación. Tendrán que utilizar CSS con algunas de las opciones que vimos en dicha clase (CSS puro, CSS Modules o Styled Components)
 
 #### Tecnologías necesarias
 
@@ -161,13 +156,10 @@ El modelo de la base de datos deberá tener las siguientes entidades (Aquellas p
 
 La relación entre ambas entidades debe ser de muchos a muchos ya que una raza de perro puede tener varios "temperamentos" en simultaneo y, a su vez, un "temperamento" puede corresponder a múltiples razas de perro distintas. Por ejemplo la raza `pug` es docil, inteligente y sociable (entre otras). Pero a su vez existen otras razas de perro que también son sociables o inteligentes.
 
-__IMPORTANTE__: Pensar como modelar los IDs de las razas de perros en la base de datos. Existen distintas formas correctas de hacerlo pero tener en cuenta que cuando hagamos click en alguna, esta puede provenir de la API o de la Base de Datos por lo que cuando muestre su detalle no debería haber ambigüedad en cual se debería mostrar. Por ejemplo si en la API la raza `Pug` tiene id = 1 y en nuestra base de datos creamos una nueva raza `Henry Pug` con id = 1, ver la forma de diferenciarlas cuando querramos acceder al detalle de la misma.
 
 ## Backend
 
 Se debe desarrollar un servidor en Node/Express con las siguientes rutas:
-
-__IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y paginados brindados por la API externa, todas estas funcionalidades tienen que implementarlas ustedes.
 
 - [ ] __GET /dogs__:
   - Obtener un listado de las razas de perro
